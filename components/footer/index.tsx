@@ -46,7 +46,7 @@ const Footer = () => {
       
       <div className="site-footer__bottom">
         <div className="container">
-          <p>DESIGN BY Abdelrhman Mousa - © 2024. ALL RIGHTS RESERVED.</p>
+          <p>DESIGN BY ABDELRHMAN MOUSA - © 2024. ALL RIGHTS RESERVED.</p>
         </div>
       </div>
     </footer>
