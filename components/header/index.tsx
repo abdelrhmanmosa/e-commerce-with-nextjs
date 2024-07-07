@@ -55,11 +55,11 @@ const Header = ({ isErrorPage }: HeaderType) => {
   return(
     <header className={`site-header ${!onTop ? 'site-header--fixed' : ''}`}>
       <div className="container">
-        <Link href="/">
+        <Link href="/" legacyBehavior>
           <a><h1 className="site-logo"><Logo />E-Shop</h1></a>
         </Link>
         <nav ref={navRef} className={`site-nav ${menuOpen ? 'site-nav--open' : ''}`}>
-          <Link href="/products">
+          <Link href="/products" legacyBehavior>
             <a>Products</a>
           </Link>
           <a href="#">Inspiration</a>
@@ -75,7 +75,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
             </form>  
             <i onClick={() => setSearchOpen(!searchOpen)}  className="icon-search"></i>
           </button>
-          <Link href="/cart">
+          <Link href="/cart" >
             <button className="btn-cart">
               <i className="icon-cart"></i>
               {cartItems.length > 0 && 

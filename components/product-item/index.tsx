@@ -24,7 +24,7 @@ const ProductItem = ({ discount, images, id, name, price, currentPrice }: Produc
       <div className="product__image">
         <button type="button" onClick={toggleFav} className={`btn-heart ${isFavourite ? 'btn-heart--active' : ''}`}><i className="icon-heart"></i></button>
 
-        <Link href={`/product/${id}`}>
+        <Link href={`/product/${id}`} legacyBehavior>
           <a>
             <img src={images ? images[0] : ''} alt="product" />
             {discount && 
